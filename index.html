@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Dostluk Örme Tekstil — Yaka | Manşet | Şerit</title>
+  <style>
+    :root{--primary:#0b1947;--accent:#e74c3c;--muted:#6b7280;--bg:#fbfcfe}
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; color:#111; background:var(--bg)}
+    a{color:inherit}
+
+    header{position:fixed;inset:0 0 auto 0;height:72px;background:linear-gradient(180deg, rgba(255,255,255,0.85), rgba(255,255,255,0.7));backdrop-filter:blur(6px);display:flex;align-items:center;z-index:40;border-bottom:1px solid rgba(11,25,71,0.06)}
+    .wrap{width:92%;max-width:1200px;margin:auto;display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;align-items:center;gap:14px}
+    .brand img{height:48px;width:auto;border-radius:6px;background:#fff;padding:6px}
+    nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0;font-weight:600}
+    nav a{padding:8px 10px;border-radius:8px;transition:all .2s}
+    nav a:hover{background:rgba(11,25,71,0.06);color:var(--primary)}
+
+    /* HERO */
+    .hero{height:min(68vh,760px);display:grid;align-items:center;padding:36px 0;background:#07103a;color:#fff;position:relative;overflow:hidden}
+    
+    .hero-inner{position:relative;z-index:2;display:flex;gap:30px;align-items:center;width:92%;max-width:1200px;margin:auto}
+    .hero-left{flex:1}
+    .hero h1{font-size:clamp(26px,4vw,48px);margin:0 0 10px 0;color:#fff}
+    .hero p{margin:0 0 18px 0;color:rgba(255,255,255,0.9);max-width:650px}
+    .hero .cta{display:flex;gap:12px;align-items:center}
+    .btn{background:var(--accent);color:#fff;padding:12px 18px;border-radius:8px;font-weight:700;box-shadow:0 6px 18px rgba(231,76,60,0.18)}
+    .ghost{background:transparent;border:1px solid rgba(255,255,255,0.16);color:#fff;padding:10px 16px;border-radius:8px}
+
+    .hero-right{width:360px;display:flex;align-items:center;justify-content:center}
+    .hero-right img{width:100%;border-radius:12px;box-shadow:0 12px 30px rgba(3,6,23,0.5);border:6px solid rgba(255,255,255,0.04)}
+
+    /* CONTENT */
+    main{padding:30px 0}
+    .section{width:92%;max-width:1200px;margin:40px auto}
+    .card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+    .card{background:#fff;border-radius:12px;padding:14px;box-shadow:0 6px 20px rgba(15,23,42,0.06);overflow:hidden}
+    .card img{width:100%;height:220px;object-fit:cover;border-radius:8px}
+    .card h4{margin:12px 0 6px 0}
+    .muted{color:var(--muted)}
+
+    /* PROCESS */
+    .steps{display:flex;gap:14px;flex-wrap:wrap}
+    .step{flex:1;min-width:180px;background:linear-gradient(180deg,#fff,#fbfdff);padding:18px;border-radius:10px;border:1px solid rgba(11,25,71,0.04);text-align:center}
+    .step .num{background:var(--primary);color:#fff;width:44px;height:44px;border-radius:50%;display:inline-grid;place-items:center;font-weight:700;margin-bottom:10px}
+
+    /* CONTACT */
+    .contact-wrap{display:grid;grid-template-columns:1fr 360px;gap:18px}
+    .contact-card{background:#fff;padding:18px;border-radius:12px;border:1px solid rgba(11,25,71,0.04)}
+    label{display:block;font-weight:600;margin-bottom:6px}
+    input,textarea{width:100%;padding:10px;border:1px solid #e6e9ef;border-radius:8px;margin-bottom:10px}
+    button[type=submit]{background:var(--primary);color:#fff;padding:12px 14px;border-radius:8px;border:0;font-weight:700}
+
+    footer{padding:28px 0;background:linear-gradient(180deg,var(--primary),#07103a);color:#fff;margin-top:28px}
+    .footer-inner{width:92%;max-width:1200px;margin:auto;display:flex;justify-content:space-between;align-items:center}
+
+    @media (max-width:900px){.contact-wrap{grid-template-columns:1fr}.hero-right{display:none}.wrap{width:92%}.brand img{height:42px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="brand">
+        <img src="logo.png" alt="Dostluk Örme Logo">
+        <div>
+          <div style="font-weight:800;color:var(--primary);font-size:14px">Dostluk Örme Tekstil</div>
+          <div style="font-size:12px;color:var(--muted)">1996'den beri örme yaka, manşet, şerit</div>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">Ana Sayfa</a></li>
+          <li><a href="#about">Hakkımızda</a></li>
+          <li><a href="#products">Ürünler</a></li>
+          <li><a href="#process">Süreç</a></li>
+          <li><a href="#contact">İletişim</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-inner">
+      <div class="hero-left">
+        <h1>Dostluk Örme Tekstil — Güvenilir Örme İmalatı</h1>
+        <p>1996'dan beri yaka, kol manşet ve jakarlı şerit lastik üretiminde sektörün tercih edilen tedarikçisiyiz. Kısa numune süreciyle markanıza özel çözümler sunuyoruz.</p>
+        <div class="cta">
+          <a class="btn" href="#contact">Teklif Alın</a>
+          <a class="ghost" href="#products">Ürünleri İncele</a>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <main>
+    <section id="about" class="section">
+      <div style="display:flex;gap:18px;align-items:center;flex-wrap:wrap">
+        <div style="flex:1;min-width:260px">
+          <h2>Hakkımızda</h2>
+          <p class="muted">1996 yılında <strong>Ayhan Yiğit</strong> tarafından kurulan Dostluk Örme, bugün <strong>Kadir Yiğit</strong> liderliğinde İstanbul Davutpaşa'da üretim yapmaktadır. Tecrübemiz, güvenilir teslimat ve kalite odaklı çalışma prensibimizle tekstil sektörüne hizmet veriyoruz.</p>
+          <ul class="muted">
+            <li>Örme yaka &amp; manşet</li>
+            <li>Jakarlı ve logolu şerit lastik</li>
+            <li>Numune &amp; küçük-seri üretim</li>
+          </ul>
+        </div>
+        <div style="width:360px;border-radius:10px;overflow:hidden;box-shadow:0 8px 20px rgba(3,6,23,0.06)">
+          <img src="makine.png.png" alt="Makine" style="width:100%;height:100%;object-fit:cover">
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="section">
+      <h3 style="margin-bottom:12px">Ürünlerimiz</h3>
+      <div class="card-grid">
+        <div class="card">
+          <img src="yaka.png.png" alt="Örme Yaka">
+          <h4>Örme Yaka</h4>
+          <p class="muted">Tişört ve sweatshirtler için formu koruyan, renk vermeyen kaliteli yakalar.</p>
+        </div>
+
+        <div class="card">
+          <img src="manset.jpg.png" alt="Kol Manşet">
+          <h4>Kol Manşetleri</h4>
+          <p class="muted">Esnek, dayanıklı ve estetik manşet lastikleri. Spor &amp; günlük giyimde kullanıma uygun.</p>
+        </div>
+
+        <div class="card">
+          <img src="serit.jpg.png" alt="Şerit Lastik">
+          <h4>Desenli Şerit &amp; Jakarlı Lastik</h4>
+          <p class="muted">Markanıza özel logolu, yazılı veya jakar tekniği ile üretilen şerit lastikler.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="section">
+      <h3>Süreç</h3>
+      <div class="steps">
+        <div class="step">
+          <div class="num">1</div>
+          <strong>İletişim</strong>
+          <p class="muted">Telefon veya mail ile ihtiyacınızı bize bildirirsiniz.</p>
+        </div>
+        <div class="step">
+          <div class="num">2</div>
+          <strong>Talep &amp; Numune</strong>
+          <p class="muted">Görsel, ölçü veya numune iletirsiniz; biz değerlendirelim.</p>
+        </div>
+        <div class="step">
+          <div class="num">3</div>
+          <strong>Numune Üretimi</strong>
+          <p class="muted">İstenilen örnek üretilir ve onayınıza sunulur.</p>
+        </div>
+        <div class="step">
+          <div class="num">4</div>
+          <strong>Üretim &amp; Teslim</strong>
+          <p class="muted">Anlaşma sonrası üretim başlar, planlanan sürede teslim edilir.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h3>İletişim</h3>
+      <div class="contact-wrap">
+        <div class="contact-card">
+          <p><strong>Yetkili:</strong> Kadir Yiğit</p>
+          <p><strong>Adres:</strong> Maltepe Mah. Davutpaşa Cad. Kale İş Merkezi No:221/222, İstanbul / Türkiye 34200</p>
+          <p><strong>Instagram:</strong> <a href="https://instagram.com/Dostlukorme" target="_blank">@Dostlukorme</a></p>
+          <hr style="border:none;border-top:1px solid #eef2f6;margin:14px 0">
+          <p class="muted">Teklif almak veya numune talep etmek için lütfen formu doldurun. En kısa sürede dönüş yapacağız.</p>
+        </div>
+
+        <div>
+          <form class="contact-card" onsubmit="event.preventDefault();alert('Form gönderimi demo modunda — iletişim: +90 555 555 55 55 veya Instagram @Dostlukorme')">
+            <label>İsim</label>
+            <input required placeholder="Adınız ve soyadınız">
+            <label>Firma / Marka (opsiyonel)</label>
+            <input placeholder="Firma adı">
+            <label>Mesaj / Ürün Talebi</label>
+            <textarea rows="5" placeholder="Numune isteğiniz, ölçü veya açıklama" required></textarea>
+            <button type="submit">Gönder</button>
+          </form>
+        </div>
+      </div>
+
+      <div style="width:92%;max-width:1200px;margin:18px auto">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.650490014603!2d28.9054783!3d41.0146885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cabb7bd1117567%3A0x673909774640473d!2sDavutpa%C5%9Fa%20Cd.%2C%20Zeytinburnu%2F%C4%B0stanbul!5e0!3m2!1str!2str!4v1700000000000!5m2!1str!2str" width="100%" height="300" style="border:0;border-radius:12px" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div>© <strong>2024 Dostluk Örme</strong> — Tüm Hakları Saklıdır.</div>
+      <div style="font-size:13px;color:rgba(255,255,255,0.75)">Maltepe Mah. Davutpaşa Cad. Kale İş Merkezi No:221/222, İstanbul</div>
+    </div>
+  </footer>
+
+</body>
+</html>
